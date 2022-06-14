@@ -1,9 +1,7 @@
-name : react-build
-on:
-  push: [develop]
-  push-requests: [developn]
+name: react-build
+on: [push]
 jobs:
   build:
-     runs-on: ubuntu:18.04
+     runs-on: ubuntu-latest
      steps:
-     - uses : actions/checkout@v2
+       - uses: actions/checkout@v2
