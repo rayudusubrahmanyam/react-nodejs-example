@@ -7,7 +7,7 @@ jobs:
        - name: checkout 
          uses: actions/checkout@v2
        - name: custom-step
-         run: echo 'Hello ${{ MYNAME }}''
+         run: echo 'Hello ${{ MYNAME }}'
          env:
            MYNAME: Rayudu 
 
