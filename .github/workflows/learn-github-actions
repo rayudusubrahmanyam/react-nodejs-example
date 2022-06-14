@@ -5,10 +5,8 @@ jobs:
   check-cat-version:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkcout@v3
-      - name: Node Setup
-        uses: actions/nodesetup@v3
+      - uses: actions/checkcout@v3
+      - uses: actions/nodesetup@v3
         with:
           node-version: '14'
       - run: npm install -g bats
