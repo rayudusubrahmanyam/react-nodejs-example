@@ -1,13 +1,17 @@
 name: react-build
 on: [push]
+env:
+  AGE: 39
 jobs:
   build:
      runs-on: ubuntu-latest
+     env:
+       SURNAME: Rayudu
      steps:
        - name: checkout 
          uses: actions/checkout@v2
        - name: custom-step
-         run: echo "Hello $MYNAME"
+         run: echo "Hello $SURNAME $MYNAME age $AGE"
          env:
-           MYNAME: Rayudu 
+           MYNAME: Subrahmanyam 
 
