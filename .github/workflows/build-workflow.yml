@@ -1,5 +1,8 @@
 name: react-build
-on: [push]
+on:
+  push: 
+    branches: 
+      - develop
 env:
   AGE: 39
 jobs:
