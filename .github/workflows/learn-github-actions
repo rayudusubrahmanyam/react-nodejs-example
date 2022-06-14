@@ -1,6 +1,5 @@
 name: learn-github-actions
-on: 
-  push: [develop]
+on: [push]
 jobs:
   check-cat-version:
     runs-on: ubuntu-latest
