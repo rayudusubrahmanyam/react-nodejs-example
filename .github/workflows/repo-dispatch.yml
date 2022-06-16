@@ -6,6 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: test
+      - name: test 123
         uses: actions/checkout@v1
+      - name: test 321  
         run: echo "testing"    
