@@ -1,0 +1,11 @@
+name: repo-dispatch
+on:
+  repository_dispatch:
+    types: [opened, deleted]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        uses: actions/checkout@v1
+        run: echo "testing"    
