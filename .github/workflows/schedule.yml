@@ -1,12 +1,11 @@
 name: schedule workflow
 on:
   schedule:
-    - cron: 5 * * * * 
+    - cron: '5 * * * *'
 jobs:
-  runs_on: ubuntu_latest
+ build:
+   runs-on: ubuntu-latest 
   steps:
-     build:
-       - name: Building
-         run: echo "testing 123"  
+    run: echo "testing 123"  
 
       
