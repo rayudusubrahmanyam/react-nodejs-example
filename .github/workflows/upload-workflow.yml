@@ -26,6 +26,7 @@ jobs:
       - name: download artifacts
         uses: actions/download-artifact@v3
         with:
-          name: assets-for-download    
+          name: assets-for-download
+          path: dowloadfiles    
       - name: Display structure of downloaded files
         run: ls -R
