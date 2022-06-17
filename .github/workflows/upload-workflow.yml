@@ -8,12 +8,12 @@ jobs:
     steps:
       - name: create-files
         run: |
-        mkdir downloads
-        cd downloads
-        echo 'alpha' > alpha.html
-        echo 'bravo' > bravo.html
-        echo 'beta' > beta.html
-        cd ..
+          mkdir downloads
+          cd downloads
+          echo 'alpha' > alpha.html
+          echo 'bravo' > bravo.html
+          echo 'beta' > beta.html
+          cd ..
       - name: use the upload artifact github action
         uses: actions/upload-artifact@v2
         with:
