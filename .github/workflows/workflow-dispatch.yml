@@ -7,11 +7,11 @@ on:
         required: true
         default: 'warning'
       tags:
-        description: 'Test scenario tags'  
+        description: 'Test scenario tags32'  
 jobs:
    build:
      runs-on: ubuntu-latest
-     steps:
+       steps:
         - uses: actions/checkout@v1
         - uses: docker://alpine:3.8
 
