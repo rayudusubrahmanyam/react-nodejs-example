@@ -1,0 +1,18 @@
+name: workflow-reusable
+on:
+  push: 
+    branches: 
+      - develop
+  inputs:
+      username:
+        required: true
+        type: string
+        default: "rayudu"    
+ jobs:
+  reusable_workflow_job:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: ./.github/workflows/workflow-action
+        with:
+          username: ${{ inputs.username }}
