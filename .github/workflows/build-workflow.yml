@@ -14,7 +14,9 @@ jobs:
        - name: checkout 
          uses: actions/checkout@v2
        - name: custom-step
-         run: echo "Hello $SURNAME $MYNAME age $AGE  ${{ secrets.SONAR_TOKEN }}"
+         run: |
+           echo "Hello $SURNAME $MYNAME age $AGE  ${{ secrets.SONAR_TOKEN }}"
+           echo '${{ runner.os }}'
          env:
            MYNAME: Subrahmanyam 
 
