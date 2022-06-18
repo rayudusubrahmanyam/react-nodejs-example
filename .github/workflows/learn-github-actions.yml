@@ -2,7 +2,7 @@ name: learn-github-actions
 on: [push]
 jobs:
   check-cat-version:
-    if: ${{ github.ref == 'refs/heads/main' }}
+    if: ${{ github.ref == 'refs/heads/develop' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
